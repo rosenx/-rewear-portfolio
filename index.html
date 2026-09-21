@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="REWEAR — curated pre-loved fashion in Sweden.">
+  <title>REWEAR — Pre-loved fashion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Free delivery in Sweden over 700 kr · 14-day returns · Secure checkout</div>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="./">REWEAR<small>Pre-loved fashion for a brighter tomorrow.</small></a>
+      <nav class="links">
+        <a href="?view=shop">Shop</a>
+        <a href="?view=shop&cat=women">Women</a>
+        <a href="?view=shop&cat=men">Men</a>
+        <a href="?view=shop&cat=accessories">Accessories</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+        <a class="icon-btn" href="?view=wishlist" aria-label="Wishlist">♡ <span id="wishlistCount">0</span></a>
+        <a class="icon-btn" href="?view=bag" aria-label="Bag">Bag <span id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+  <div id="searchPanel" class="search-panel" hidden>
+    <div class="container search-inner">
+      <input id="searchInput" placeholder="Search items, brands or categories…" autocomplete="off">
+      <button id="closeSearch" class="icon-btn">✕</button>
+    </div>
+    <div class="container"><div id="searchResults" class="search-results"></div></div>
+  </div>
+  <main id="app"></main>
+  <footer>
+    <div class="container footer-grid">
+      <div><div class="brand footer-brand">REWEAR</div><p>Quality clothing deserves another life.</p></div>
+      <div><strong>Shop</strong><a href="?view=shop">All items</a><a href="?view=shop&cat=women">Women</a><a href="?view=shop&cat=men">Men</a></div>
+      <div><strong>Help</strong><a href="?view=about">About</a><a href="mailto:xizi24zv@student.ju.se">Contact</a><span>Sweden · SEK</span></div>
+    </div>
+    <div class="container footer-bottom">REWEAR portfolio prototype · UI/UX & Front-end Development</div>
+  </footer>
+  <script src="catalog.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
